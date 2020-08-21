@@ -99,7 +99,7 @@ h2{
     color: #fff;
 }
 .text-box{
-    padding: 10vh 5%;
+    padding: 10vh 3%;
     color: #fff;
 }
 h3{
@@ -155,6 +155,9 @@ h3{
 #skills{
     background: linear-gradient(45deg,rgba(114, 97, 147) 15%,rgba(227, 123, 124) 50%);
 }
+#skills h3{
+    margin: 5px;
+}
 #skills .text-box{
     display: flex;
     align-items: center;
@@ -164,6 +167,10 @@ h3{
 #contact{
     background: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
     color: #fff;
+}
+.contact-details{
+    display: flex;
+    width: 100%;
 }
 .form{
     padding: 0 5%;
@@ -216,3 +223,183 @@ svg{
 .details h3{
     margin: 20px 0 10px;
 }
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    footer{
+        top: 0;
+        background: #eeeeee;
+    }
+    .profile{
+        width: 50%;
+    }
+    #hero .button{
+        margin-bottom: 20px;
+    }
+    .scroll-box{
+        width: 100%;
+        flex-direction: column;
+        margin: 10vh 0 0 0;
+    }
+    section{
+        width: 100%;
+    }
+    #projects{
+        width: 100%;
+        height: 100vh;
+    }
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+    #skills .text-box{
+        flex-direction: column;
+    }
+    }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        footer{
+            display: block;
+            top: 0;
+            background: #eeeeee;
+            padding: 2% 5%;
+        }
+        .footer-link{
+            margin-right: 20px;
+        }
+        .profile{
+            display: none;
+        }
+        #hero{
+            width: 96%;
+        }
+        #hero .button{
+            margin-bottom: 20px;
+        }
+        .hero-text-box{
+            padding: 2%;
+        }
+        .scroll-box{
+            width: 100%;
+            flex-direction: column;
+            margin: 10vh 0 0 0;
+        }
+        section{
+            width: 100%;
+            flex-direction: column;
+        }
+        #projects{
+            width: 100%;
+            height: 300vh;
+        }
+        .gallery{
+            grid-template-columns: 1fr;
+        }
+        #skills .text-box{
+            flex-direction: column;
+        }
+        .contact-details{
+            flex-direction: column;
+            align-items: center;
+        }
+        .heading-bg{
+            width: 100%;
+        }
+        #contact header{
+            display: block;
+            width: 100%;
+        }
+        html{
+            font-size: 12px;
+        }
+        header a:nth-of-type(1){
+            padding-left: 5%;
+        }
+        .form{
+            padding-top: 5vh;
+        }
+        .round-img{
+            margin-top: 5vh;
+        }
+        input{
+            width: 100%;
+        }
+        svg{
+            margin-bottom: 5vh;
+        }
+        .text-box{
+            padding: 3%;
+            box-sizing: border-box;
+        }
+    }    
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+        footer{
+            display: block;
+            top: 0;
+            background: #eeeeee;
+            padding: 2% 5%;
+        }
+        .footer-link{
+            margin-right: 20px;
+        }
+        .profile{
+            display: none;
+        }
+        #hero{
+            width: 96%;
+        }
+        #hero .button{
+            margin-bottom: 20px;
+        }
+        .hero-text-box{
+            padding: 2%;
+        }
+        .scroll-box{
+            width: 100%;
+            flex-direction: column;
+            margin: 10vh 0 0 0;
+        }
+        section{
+            width: 100%;
+            flex-direction: column;
+        }
+        #projects{
+            width: 100%;
+            height: 100vh;
+        }
+        .gallery{
+            grid-template-columns: 1fr;
+        }
+        #skills .text-box{
+            flex-direction: column;
+        }
+        .contact-details{
+            flex-direction: column;
+            align-items: center;
+        }
+        .heading-bg{
+            width: 100%;
+        }
+        #contact header{
+            display: block;
+            width: 100%;
+        }
+        html{
+            font-size: 12px;
+        }
+        header a:nth-of-type(1){
+            padding-left: 5%;
+        }
+        .form{
+            padding-top: 5vh;
+        }
+        .round-img{
+            margin-top: 5vh;
+        }
+        input{
+            width: 100%;
+        }
+        svg{
+            margin-bottom: 5vh;
+        }
+        .text-box{
+            padding: 3%;
+            box-sizing: border-box;
+        }
+        }
