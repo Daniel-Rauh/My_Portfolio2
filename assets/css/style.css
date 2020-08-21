@@ -104,6 +104,7 @@ h2{
 }
 h3{
     margin-bottom: 40px;
+    line-height: 30px;
 }
 #projects{
     width: 400%;
@@ -121,13 +122,31 @@ h3{
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: #000;
 }
 .link-img{
     width: 100%;
     height: 100%;
-    background: url(../img/bild6.jpeg) center/cover no-repeat;
     transition: transform .4s, opacity .4s;
     opacity: .5;
+}
+.gallery a:nth-of-type(1) .link-img{
+    background: url(../img/Projekt1.png) center/cover no-repeat;
+}
+.gallery a:nth-of-type(2) .link-img{
+    background: url(../img/Projekt2.png) center/cover no-repeat;
+}
+.gallery a:nth-of-type(3) .link-img{
+    background: url(../img/Projekt3.png) center/cover no-repeat;
+}
+.gallery a:nth-of-type(4) .link-img{
+    background: url(../img/Projekt4.png) center/cover no-repeat;
+}
+.gallery a:nth-of-type(5) .link-img{
+    background: url(../img/Projekt5.png) center/cover no-repeat;
+}
+.gallery a:nth-of-type(6) .link-img{
+    background: url(../img/Projekt6.png) center/cover no-repeat;
 }
 .link-box:hover>.link-img{
     transform: scale(1.1);
@@ -155,7 +174,7 @@ h3{
 form{
     width: 100%;
 }
-input:not(:last-of-type),textarea{
+input,textarea{
     border: none;
     background: #eeeeee;
     border-radius: 5px;
@@ -164,7 +183,7 @@ input:not(:last-of-type),textarea{
 input,textarea:focus{
     outline: none;
 }
-input:not(:last-of-type){
+input{
     width: 60%;
     height: 20px;
     margin-bottom: 10px;
@@ -173,7 +192,7 @@ textarea{
     width: 100%;
     margin-bottom: 20px;
 }
-input:last-of-type{
+form button{
     border: none;
 }
 .details{
