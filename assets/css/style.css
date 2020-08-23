@@ -356,13 +356,13 @@ svg{
         }
         #projects{
             width: 100%;
-            height: 300vh;
+            height: 500vh;
         }
         .gallery{
             grid-template-columns: 1fr;
         }
-        #skills .text-box{
-            flex-direction: column;
+        #skills{
+            height: 300vh;
         }
         .contact-details{
             flex-direction: column;
@@ -398,13 +398,14 @@ svg{
             box-sizing: border-box;
         }
         #skills .text-box{
-            height: 60vh;
+            height: 150vh;
         }
-        .circle:nth-of-type(3){
-            left: 60%;
+        .circle{
+            position: static;
         }
         .github{
-            width: 50%;
+            width: 100%;
+            padding-top: 5vh;
         }
         .github ul li{
             margin: 50px 10px;
