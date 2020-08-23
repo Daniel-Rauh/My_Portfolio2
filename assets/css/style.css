@@ -25,7 +25,7 @@ section{
     width: 300%;
 }
 .hero-text-box{
-    background: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    background: linear-gradient(45deg, #557368 20%, #a3bfb5 60%, #c7d9a0);
     color: #fff;
     width: 100%;
     padding: 20vh 5%;
@@ -72,11 +72,11 @@ footer{
 }
 .footer-link{
     margin-right: 35px;
-    color: #726193;
+    color: #433461;
     transition: color .4s;
 }
 .footer-link:hover{
-    color: #e37b7c;
+    color: #557368;
 }
 #about{
     background: url(../img/about.jpeg) center/cover no-repeat;
@@ -91,7 +91,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg,rgba(114, 97, 147, 0.35) 25%,rgba(227, 123, 124, 0.35) 50%,rgba(255, 228, 180, 0.35));
+    background: linear-gradient(45deg,rgba(85, 115, 104, 0.35) 25%,rgba(163, 191, 181, 0.35) 50%,rgba(199, 217, 160, 0.35));
 }
 h2{
     border-bottom: 4px solid #ffe4b4;
@@ -99,18 +99,21 @@ h2{
     color: #fff;
 }
 .text-box{
-    padding: 10vh 3%;
+    padding: 0vh 3%;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h3{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     line-height: 30px;
 }
 #projects{
     width: 400%;
 }
 #projects .heading{
-    background: #726193;
+    background: #557368;
 }
 .gallery{
     display: grid;
@@ -149,11 +152,41 @@ h3{
     background: url(../img/Projekt6.png) center/cover no-repeat;
 }
 .link-box:hover>.link-img{
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 1;
 }
 #skills{
-    background: linear-gradient(45deg,rgba(114, 97, 147) 15%,rgba(227, 123, 124) 50%);
+    background: linear-gradient(45deg, #557368 20%, #a3bfb5 60%, #c0dd82);
+}
+.circle{
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: .8;
+}
+.circle:nth-of-type(1){
+    background: rgb(85, 115, 104);
+    top: 10vh;
+    left: 15%;
+    width: 250px;
+    height: 250px;
+}
+.circle:nth-of-type(2){
+    top: 32vh;
+    left: 35%;
+    width: 200px;
+    height: 200px;
+    background: #c0dd82;
+}
+.circle:nth-of-type(3){
+    top: 20vh;
+    left: 55%;
+    width: 200px;
+    height: 200px;
+    background: #a3bfb5;
 }
 #skills h3{
     margin: 5px;
@@ -163,9 +196,10 @@ h3{
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    position: relative;
 }
 #contact{
-    background: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    background: linear-gradient(45deg, #557368 20%, #a3bfb5 60%, #c0dd82);
     color: #fff;
 }
 .contact-details{
@@ -186,6 +220,7 @@ input,textarea{
     background: #eeeeee;
     border-radius: 5px;
     padding: 5px;
+    resize: none;
 }
 input,textarea:focus{
     outline: none;
@@ -223,6 +258,29 @@ svg{
 .details h3{
     margin: 20px 0 10px;
 }
+.github{
+    width: 30%;
+    background: #557368;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.github ul{
+    margin-top: 5vh;
+    list-style: none;
+}
+.github ul li{
+    margin: 10px;
+}
+.github a{
+    text-decoration: none;
+    color: #fff;
+    font-stretch: 1.2rem;
+}
+.github a:hover{
+    text-decoration: underline;
+}
 @media only screen and (min-width: 768px) and (max-width: 979px) {
     footer{
         top: 0;
@@ -250,7 +308,19 @@ svg{
         grid-template-columns: 1fr;
     }
     #skills .text-box{
-        flex-direction: column;
+        height: 60vh;
+    }
+    .circle:nth-of-type(3){
+        left: 60%;
+    }
+    .github{
+        width: 50%;
+    }
+    .github ul li{
+        margin: 50px 10px;
+    }
+    .round-img{
+        margin-top: 10px;
     }
     }
     @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -327,6 +397,21 @@ svg{
             padding: 3%;
             box-sizing: border-box;
         }
+        #skills .text-box{
+            height: 60vh;
+        }
+        .circle:nth-of-type(3){
+            left: 60%;
+        }
+        .github{
+            width: 50%;
+        }
+        .github ul li{
+            margin: 50px 10px;
+        }
+        .round-img{
+            margin-top: 10px;
+        }
     }    
     @media only screen and (min-width: 320px) and (max-width: 479px) {
         footer{
@@ -361,10 +446,10 @@ svg{
         }
         #projects{
             width: 100%;
-            height: 100vh;
         }
         .gallery{
             grid-template-columns: 1fr;
+            height: 250vh;
         }
         #skills .text-box{
             flex-direction: column;
@@ -401,5 +486,19 @@ svg{
         .text-box{
             padding: 3%;
             box-sizing: border-box;
+        }
+        .circle{
+            position: static;
+        }
+        .github{
+            width: 100%;
+            display: block;
+            padding: 5vh 0 0 30%;
+        }
+        .github ul li{
+            margin: 50px 10px;
+        }
+        .round-img{
+            margin-top: 10px;
         }
         }
