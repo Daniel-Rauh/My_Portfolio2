@@ -9,15 +9,17 @@ body{
 html{
     font-size: 16px;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 .profile{
     width: 30%;
+    object-fit: cover;
 }
 .scroll-box{
     margin: 12vh 10% 7vh;
     box-shadow: 1px 1px 15px 1px;
     display: flex;
-    width: 400%;
+    width: 600%;
     height: 70vh;
 }
 section{
@@ -110,50 +112,80 @@ h3{
     line-height: 30px;
 }
 #projects{
-    width: 400%;
+    width: 900%;
+    background: linear-gradient(45deg, #557368 20%, #a3bfb5 60%, #c0dd82);
 }
-#projects .heading{
-    background: #557368;
+.project{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #ffe4b4;
+    margin: 5vh 0;
+    padding: 0 1%;
+    width: 200%;
 }
-.gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
-    width: 100%;
+.project:nth-of-type(1){
+    border-left: 2px solid #ffe4b4;
+    margin-left: 30px;
 }
-.link-box{
-    width: 100%;
-    height: 100%;
+.project:last-of-type{
+    border: none;
+}
+.project>a{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    background: #000;
 }
 .link-img{
-    width: 100%;
-    height: 100%;
-    transition: transform .4s, opacity .4s;
-    opacity: .5;
-}
-.gallery a:nth-of-type(1) .link-img{
     background: url(../img/Projekt1.png) center/cover no-repeat;
+    opacity: .5;
+    width: 90%;
+    height: 100%;
+    transition: transform .6s, opacity .6s;
 }
-.gallery a:nth-of-type(2) .link-img{
-    background: url(../img/Projekt2.png) center/cover no-repeat;
-}
-.gallery a:nth-of-type(3) .link-img{
-    background: url(../img/Projekt3.png) center/cover no-repeat;
-}
-.gallery a:nth-of-type(4) .link-img{
-    background: url(../img/Projekt4.png) center/cover no-repeat;
-}
-.gallery a:nth-of-type(5) .link-img{
-    background: url(../img/Projekt5.png) center/cover no-repeat;
-}
-.gallery a:nth-of-type(6) .link-img{
-    background: url(../img/Projekt6.png) center/cover no-repeat;
-}
-.link-box:hover>.link-img{
+.link-img:hover{
     transform: scale(1.05);
     opacity: 1;
+}
+.project:nth-of-type(1) .link-img{
+    background: url(../img/Projekt1.png) center/cover no-repeat;
+}
+.project:nth-of-type(2) .link-img{
+    background: url(../img/Projekt2.png) center/cover no-repeat;
+}
+.project:nth-of-type(3) .link-img{
+    background: url(../img/Projekt3.png) center/cover no-repeat;
+}
+.project-text{
+    width: 60%;
+    text-align: center;
+}
+.project-text>a{
+    display: block;
+    margin: 15px 0 20px 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.project-text>a:hover{
+    text-decoration: underline;
+}
+.project-text h3{
+    margin: 0;
+    color: #fff;
+    text-decoration: underline #ffe4b4;
+}
+.project-text p{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1rem;
+}
+.unavailable{
+    margin: 15px 0 20px 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: line-through;
 }
 #skills{
     background: linear-gradient(45deg, #557368 20%, #a3bfb5 60%, #c0dd82);
@@ -302,16 +334,34 @@ svg{
     }
     #projects{
         width: 100%;
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
-    .gallery{
-        grid-template-columns: 1fr;
+    .project{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .project:nth-of-type(1){
+        margin: 0;
+        border: none;
+    }
+    .project>a{
+        width: 100%;
+    }
+    .project-text{
+        width: 100%;
+        height: 70vh;
     }
     #skills .text-box{
         height: 60vh;
     }
     .circle:nth-of-type(3){
-        left: 60%;
+        left: 57%;
     }
     .github{
         width: 50%;
@@ -356,10 +406,28 @@ svg{
         }
         #projects{
             width: 100%;
-            height: 500vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
-        .gallery{
-            grid-template-columns: 1fr;
+        .project{
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        .project:nth-of-type(1){
+            margin: 0;
+            border: none;
+        }
+        .project>a{
+            width: 100%;
+        }
+        .project-text{
+            width: 100%;
+            height: 150vh;
         }
         #skills{
             height: 300vh;
@@ -447,10 +515,28 @@ svg{
         }
         #projects{
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
-        .gallery{
-            grid-template-columns: 1fr;
-            height: 250vh;
+        .project{
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        .project:nth-of-type(1){
+            margin: 0;
+            border: none;
+        }
+        .project>a{
+            width: 100%;
+        }
+        .project-text{
+            width: 100%;
+            height: 110vh;
         }
         #skills .text-box{
             flex-direction: column;
