@@ -83,6 +83,10 @@ footer{
 #about{
     background: url(../img/about.jpeg) center/cover no-repeat;
 }
+#about a{
+    color: #fff;
+    text-decoration: underline;
+}
 .heading{
     display: flex;
     align-items: center;
