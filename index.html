@@ -29,7 +29,15 @@
                 </div>
                 <div class="text-box">
                     <h3>Ich bin angehender Webentwickler und immer auf der Suche nach neuen Herausforderungen.</h3>
-                    <p>Schon im jungen Alter habe ich mich begeistert mit Computern beschäftigt, aber nie wirklich mit dem Programieren. Nach langjähriger Suche nach der passenden Karriere für mich und nachdem ich schon so einiges ausprobiert hatte, bin ich auf das Coden gestoßen. Und nun sind wir hier angekommen. Ich habe Webentwicklung in einem Bootcamp gelernt und fühle mich nun bereit in meine neue Karriere zu starten. <br> Ich bin ein aufgeschlossener Mensch und immer auf der Suche nach neuen Herausforderungen. Probleme lösen (und kreieren) macht mir Spaß und neue Skills zu lernen ist das Größte für mich. Nun möchte ich dies Alles im Bereich der Webentwicklung anwenden. Alleine macht das jedoch keinen Spaß, deshalb freue ich mich darauf, bald von Ihnen zu hören.</p>
+                    <p>Schon im jungen Alter habe ich mich begeistert mit Computern beschäftigt, aber nie wirklich mit
+                        dem Programieren. Nach langjähriger Suche nach der passenden Karriere für mich und nachdem ich
+                        schon so einiges ausprobiert hatte, bin ich auf das Coden gestoßen. Und nun sind wir hier
+                        angekommen. Ich habe Webentwicklung in einem Bootcamp gelernt und fühle mich nun bereit in meine
+                        neue Karriere zu starten. <br> Ich bin ein aufgeschlossener Mensch und immer auf der Suche nach
+                        neuen Herausforderungen. Probleme lösen (und kreieren) macht mir Spaß und neue Skills zu lernen
+                        ist das Größte für mich. Nun möchte ich dies Alles im Bereich der Webentwicklung anwenden.
+                        Alleine macht das jedoch keinen Spaß, deshalb freue ich mich darauf, bald von Ihnen zu hören.
+                    </p>
                 </div>
             </section>
             <section id="skills">
@@ -38,32 +46,14 @@
                         <h2>MAJOR SKILLS</h2>
                     </div>
                 </div>
-                <div class="text-box">
-                    <div class="circle">
-                        <h3>Languages:</h3>
-                        <ul>
-                            <li>JS (React, Node, Express)</li>
-                            <li>HTML5</li>
-                            <li>CSS3 (Sass)</li>
-                            <li>VBA</li>
-                        </ul>
-                    </div>
-                    <div class="circle">
-                        <h3>Andere:</h3>
-                        <ul>
-                            <li>Multilingual</li>
-                            <li>Design</li>
-                            <li>Texten</li>
-                        </ul>
-                    </div>
-                    <div class="circle">
-                        <h3>Soft Skills:</h3>
-                        <ul>
-                            <li>Teamwork</li>
-                            <li>Ruhe und Geduld</li>
-                            <li>Freude am Lernen</li>
-                        </ul>
-                    </div>
+                <div class="logo-box">
+                    <img src="/assets/img/html.svg" alt="">
+                    <img src="/assets/img/css.svg" alt="">
+                    <img src="/assets/img/javascript.svg" alt="">
+                    <img src="/assets/img/react.svg" alt="">
+                    <img src="/assets/img/typescript.svg" alt="">
+                    <img src="/assets/img/angular.svg" alt="">
+                    <img src="/assets/img/node-js.svg" alt="">
                 </div>
             </section>
             <section id="projects">
@@ -73,10 +63,47 @@
                     </div>
                 </div>
                 <article class="project">
-                    <a href="https://focused-goldwasser-1889c8.netlify.app/" target="_blank"><div class="link-img"></div></a>
+                    <a onclick="expandPic()">
+                        <div class="link-img"></div>
+                    </a>
+                    <div id="image-zoom">
+                        <div id="x-button" onclick="closePic()">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="project-text">
+                        <h2>React Web-App</h2>
+                        <h4 class="unavailable">Git-Link</h4>
+                        <h3>Projekt/Challenges:</h3>
+                        <p>Cascading Form in React.js. Design und Umsetzung von Web-App UI. Anleitung von
+                            internationalen Teammates. Einhaltung von wöchentlichen Sprints</p>
+                        <h3>Gelernt:</h3>
+                        <p>Komplizierte React Formulare, Umsetzung von UI-Template, Team-Skills, Scrum und Sprints,
+                            DevOps</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <a href="https://super-stipendium.de/" target="_blank">
+                        <div class="link-img"></div>
+                    </a>
+                    <div class="project-text">
+                        <h2>Super Stipendium</h2>
+                        <h4 class="unavailable">Git-Link</h4>
+                        <h3>Projekt/Challenges:</h3>
+                        <p>Next.js single-page website in Teamarbeit mit engem Zeitplan</p>
+                        <h3>Gelernt:</h3>
+                        <p>Next.js, Zeitmanagment</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <a href="https://focused-goldwasser-1889c8.netlify.app/" target="_blank">
+                        <div class="link-img"></div>
+                    </a>
                     <div class="project-text">
                         <h2>Basic Agency</h2>
-                        <a href="https://github.com/Daniel-Rauh/Projekt_Basic_Agency" class="git-link" target="_blank">Git-Link</a>
+                        <a href="https://github.com/Daniel-Rauh/Projekt_Basic_Agency" class="git-link"
+                            target="_blank">Git-Link</a>
                         <h3>Projekt/Challenges:</h3>
                         <p>Großes Multi-Page Projekt in einer einzigen CSS-Datei um die Performance zu verbessern.</p>
                         <h3>Gelernt:</h3>
@@ -84,18 +111,24 @@
                     </div>
                 </article>
                 <article class="project">
-                    <a href="https://shielded-scrubland-73219.herokuapp.com/" target="_blank"><div class="link-img"></div></a>
+                    <a href="https://shielded-scrubland-73219.herokuapp.com/" target="_blank">
+                        <div class="link-img"></div>
+                    </a>
                     <div class="project-text">
                         <h2>Nordic Rose</h2>
-                        <a href="https://github.com/Daniel-Rauh/Project_Nordic_Rose" class="git-link" target="_blank">Git-Link</a>
+                        <a href="https://github.com/Daniel-Rauh/Project_Nordic_Rose" class="git-link"
+                            target="_blank">Git-Link</a>
                         <h3>Projekt/Challenges:</h3>
-                        <p>Blog-Template mit lokaler JSON-Datei als Speicher. Anpassungsfähigkeit für Personalisierung</p>
+                        <p>Blog-Template mit lokaler JSON-Datei als Speicher. Anpassungsfähigkeit für Personalisierung
+                        </p>
                         <h3>Gelernt:</h3>
                         <p>Express.js, FileSystem, ejs</p>
                     </div>
                 </article>
                 <article class="project">
-                    <a href="https://project-tasty.netlify.app/" target="_blank"><div class="link-img"></div></a>
+                    <a href="https://project-tasty.netlify.app/" target="_blank">
+                        <div class="link-img"></div>
+                    </a>
                     <div class="project-text">
                         <h2>Tasty</h2>
                         <a href="https://github.com/Daniel-Rauh/Tasty" class="git-link" target="_blank">Git-Link</a>
@@ -103,17 +136,6 @@
                         <p>Gruppenprojekt mit dynamischem Routing und API in React.js</p>
                         <h3>Gelernt:</h3>
                         <p>React-Router, API, Team-Skills</p>
-                    </div>
-                </article>
-                <article class="project">
-                    <a href="#"><div class="link-img"></div></a>
-                    <div class="project-text">
-                        <h2>React Web-App</h2>
-                        <h4 class="unavailable">Git-Link</h4>
-                        <h3>Projekt/Challenges:</h3>
-                        <p>Cascading Form in React.js. Design und Umsetzung von Web-App UI. Anleitung von internationalen Teammates. Einhaltung von wöchentlichen Sprints</p>
-                        <h3>Gelernt:</h3>
-                        <p>Redux, Komplizierte React Formulare, Umsetzung von UI-Template, Team-Skills, Scrum und Sprints, DevOps</p>
                     </div>
                 </article>
             </section>
@@ -130,7 +152,8 @@
                             <br>
                             <input type="email" name="email" id="" placeholder="Email">
                             <br>
-                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Worum geht es?"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="Worum geht es?"></textarea>
                             <br>
                             <button class="button">Senden</button>
                         </form>
@@ -140,8 +163,17 @@
                         <h3>Daniel Rauh</h3>
                         <p>Webentwickler</p>
                         <div class="social">
-                            <a href="https://github.com/Daniel-Rauh" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" class="social-logo"></path></svg></a>
-                            <a href="https://www.linkedin.com/in/daniel-rauh/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg></a>
+                            <a href="https://github.com/Daniel-Rauh" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                        class="social-logo"></path>
+                                </svg></a>
+                            <a href="https://www.linkedin.com/in/daniel-rauh/" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z" />
+                                </svg></a>
                         </div>
                     </div>
                 </div>
