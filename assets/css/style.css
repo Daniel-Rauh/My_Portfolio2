@@ -380,6 +380,9 @@ svg{
     section{
         width: 100%;
     }
+    #skills .logo-box img{
+        position: static;
+    }
     #projects{
         width: 100%;
         display: flex;
@@ -448,6 +451,9 @@ svg{
         section{
             width: 100%;
             flex-direction: column;
+        }
+        #skills .logo-box img{
+            position: static;
         }
         #projects{
             width: 100%;
@@ -554,6 +560,9 @@ svg{
         section{
             width: 100%;
             flex-direction: column;
+        }
+        #skills .logo-box img{
+            position: static;
         }
         #projects{
             width: 100%;
